@@ -25,6 +25,8 @@ To get a local copy up and running, follow these simple example steps.
 1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/ElectronicsShop.git`
 2. Make your new cloned directory your active directory
 3. Currently, you are in the "main branch."
+4. Run ``rails s`` to start up your rails server
+5. Navigate to your browser and paste the following link ``http://localhost:3000``
 
 
 ### Prerequisites
