@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @cellphone.image %>
+</p>
+
+<p>
+  <strong>Brandname:</strong>
+  <%= @cellphone.brandname %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @cellphone.color %>
+</p>
+
+<p>
+  <strong>Memory:</strong>
+  <%= @cellphone.memory %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cellphone.description %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @cellphone.condition %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @cellphone.location %>
+</p>
+
+<%= link_to 'Edit', edit_cellphone_path(@cellphone) %> |
+<%= link_to 'Back', cellphones_path %>

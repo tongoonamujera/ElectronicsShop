@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cellphones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Brandname</th>
+      <th>Color</th>
+      <th>Memory</th>
+      <th>Description</th>
+      <th>Condition</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cellphones.each do |cellphone| %>
+      <tr>
+        <td><%= cellphone.image %></td>
+        <td><%= cellphone.brandname %></td>
+        <td><%= cellphone.color %></td>
+        <td><%= cellphone.memory %></td>
+        <td><%= cellphone.description %></td>
+        <td><%= cellphone.condition %></td>
+        <td><%= cellphone.location %></td>
+        <td><%= link_to 'Show', cellphone %></td>
+        <td><%= link_to 'Edit', edit_cellphone_path(cellphone) %></td>
+        <td><%= link_to 'Destroy', cellphone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cellphone', new_cellphone_path %>
