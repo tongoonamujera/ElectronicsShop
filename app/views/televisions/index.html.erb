@@ -17,7 +17,7 @@
   <tbody>
     <% @televisions.each do |television| %>
       <tr>
-        <td><%= television.image %></td>
+        <td><img src="<%= television.image %>"></td>
         <td><%= television.brandname %></td>
         <td><%= television.description %></td>
         <td><%= television.condition %></td>

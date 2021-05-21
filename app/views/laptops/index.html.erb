@@ -17,7 +17,7 @@
   <tbody>
     <% @laptops.each do |laptop| %>
       <tr>
-        <td><%= laptop.image %></td>
+        <td><img src="<%= laptop.image %>"></td>
         <td><%= laptop.brandname %></td>
         <td><%= laptop.description %></td>
         <td><%= laptop.condition %></td>

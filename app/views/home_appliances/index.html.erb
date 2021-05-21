@@ -17,7 +17,7 @@
   <tbody>
     <% @home_appliances.each do |home_appliance| %>
       <tr>
-        <td><%= home_appliance.image %></td>
+        <td><img src="<%= home_appliance.image %>"></td>
         <td><%= home_appliance.brandname %></td>
         <td><%= home_appliance.description %></td>
         <td><%= home_appliance.condition %></td>

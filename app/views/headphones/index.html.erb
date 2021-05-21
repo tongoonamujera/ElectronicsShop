@@ -17,7 +17,7 @@
   <tbody>
     <% @headphones.each do |headphone| %>
       <tr>
-        <td><%= headphone.image %></td>
+        <td><img src="<%= headphone.image %>"></td>
         <td><%= headphone.brandname %></td>
         <td><%= headphone.description %></td>
         <td><%= headphone.condition %></td>
