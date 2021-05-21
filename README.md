@@ -1,4 +1,4 @@
-# Advanced Building Blocks - Enumerable Methods
+# ONLINE SHOP FOR ELECTRONICS 
 
 > In this project, I have  build a pure rails application based on an online shop for electronics 
 
