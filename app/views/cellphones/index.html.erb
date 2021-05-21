@@ -19,7 +19,7 @@
   <tbody>
     <% @cellphones.each do |cellphone| %>
       <tr>
-        <td><%= cellphone.image %></td>
+        <td><img src="<%= cellphone.image %>"></td>
         <td><%= cellphone.brandname %></td>
         <td><%= cellphone.color %></td>
         <td><%= cellphone.memory %></td>
