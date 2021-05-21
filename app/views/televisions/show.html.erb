@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @television.image %>
+</p>
+
+<p>
+  <strong>Brandname:</strong>
+  <%= @television.brandname %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @television.description %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @television.condition %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @television.location %>
+</p>
+
+<%= link_to 'Edit', edit_television_path(@television) %> |
+<%= link_to 'Back', televisions_path %>

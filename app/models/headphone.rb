@@ -1,0 +1,2 @@
+class Headphone < ApplicationRecord
+end

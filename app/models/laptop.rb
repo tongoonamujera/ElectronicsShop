@@ -1,0 +1,2 @@
+class Laptop < ApplicationRecord
+end

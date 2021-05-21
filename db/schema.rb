@@ -10,13 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_21_120003) do
+ActiveRecord::Schema.define(version: 2021_05_21_122735) do
 
   create_table "cellphones", force: :cascade do |t|
     t.string "image"
     t.string "brandname"
     t.string "color"
     t.string "memory"
+    t.string "description"
+    t.string "condition"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "headphones", force: :cascade do |t|
+    t.string "image"
+    t.string "brandname"
+    t.string "description"
+    t.string "condition"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "home_appliances", force: :cascade do |t|
+    t.string "image"
+    t.string "brandname"
+    t.string "description"
+    t.string "condition"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "laptops", force: :cascade do |t|
+    t.string "image"
+    t.string "brandname"
+    t.string "description"
+    t.string "condition"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "televisions", force: :cascade do |t|
+    t.string "image"
+    t.string "brandname"
     t.string "description"
     t.string "condition"
     t.string "location"

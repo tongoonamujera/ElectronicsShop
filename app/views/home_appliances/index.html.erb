@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Home Appliances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Brandname</th>
+      <th>Description</th>
+      <th>Condition</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @home_appliances.each do |home_appliance| %>
+      <tr>
+        <td><%= home_appliance.image %></td>
+        <td><%= home_appliance.brandname %></td>
+        <td><%= home_appliance.description %></td>
+        <td><%= home_appliance.condition %></td>
+        <td><%= home_appliance.location %></td>
+        <td><%= link_to 'Show', home_appliance %></td>
+        <td><%= link_to 'Edit', edit_home_appliance_path(home_appliance) %></td>
+        <td><%= link_to 'Destroy', home_appliance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Home Appliance', new_home_appliance_path %>

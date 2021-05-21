@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Headphones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Brandname</th>
+      <th>Description</th>
+      <th>Condition</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @headphones.each do |headphone| %>
+      <tr>
+        <td><%= headphone.image %></td>
+        <td><%= headphone.brandname %></td>
+        <td><%= headphone.description %></td>
+        <td><%= headphone.condition %></td>
+        <td><%= headphone.location %></td>
+        <td><%= link_to 'Show', headphone %></td>
+        <td><%= link_to 'Edit', edit_headphone_path(headphone) %></td>
+        <td><%= link_to 'Destroy', headphone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Headphone', new_headphone_path %>

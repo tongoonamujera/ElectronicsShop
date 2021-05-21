@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Laptops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Brandname</th>
+      <th>Description</th>
+      <th>Condition</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @laptops.each do |laptop| %>
+      <tr>
+        <td><%= laptop.image %></td>
+        <td><%= laptop.brandname %></td>
+        <td><%= laptop.description %></td>
+        <td><%= laptop.condition %></td>
+        <td><%= laptop.location %></td>
+        <td><%= link_to 'Show', laptop %></td>
+        <td><%= link_to 'Edit', edit_laptop_path(laptop) %></td>
+        <td><%= link_to 'Destroy', laptop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Laptop', new_laptop_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @headphone.image %>
+</p>
+
+<p>
+  <strong>Brandname:</strong>
+  <%= @headphone.brandname %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @headphone.description %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @headphone.condition %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @headphone.location %>
+</p>
+
+<%= link_to 'Edit', edit_headphone_path(@headphone) %> |
+<%= link_to 'Back', headphones_path %>

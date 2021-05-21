@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @home_appliance.image %>
+</p>
+
+<p>
+  <strong>Brandname:</strong>
+  <%= @home_appliance.brandname %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @home_appliance.description %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @home_appliance.condition %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @home_appliance.location %>
+</p>
+
+<%= link_to 'Edit', edit_home_appliance_path(@home_appliance) %> |
+<%= link_to 'Back', home_appliances_path %>
