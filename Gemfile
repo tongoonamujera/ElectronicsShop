@@ -29,6 +29,7 @@ gem 'devise', '~> 4.8'
 
 gem 'carrierwave', '~> 2.2', '>= 2.2.1'
 
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

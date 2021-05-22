@@ -1,3 +1,39 @@
+<div class="row mt-5">
+  <% @televisions.each do |television| %>
+    <div class="card col-3 mx-auto mb-5">
+      <img src="<%= television.image %>">
+      <div class="card-body">
+        <p>
+          <%= television.brandname %>
+        </p>
+        <p>
+          <%= television.description %>
+        </p>
+        <p>
+          <%= television.condition %>
+        </p>
+        <p>
+          <%= television.location %>
+        </p>
+      </div>
+      <div class="card-footer d-flex justify-content-between">
+        <div class="col-3">
+          <%= link_to 'Show', television, class:"btn btn-outline-success py-0 px-1" %>
+        </div>
+        <div class="col-3">
+          <%= link_to 'Edit', edit_television_path(television), class:"btn btn-outline-success py-0 px-1" %>
+        </div>
+        <div class="col-3">
+          <%= link_to 'Delete', television, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger py-0 px-1" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to 'New Television', new_television_path, class:"btn btn-outline-secondary py-0 mt-4 text-center" %>
+
+
+<!--
 <p id="notice"><%= notice %></p>
 
 <h1>Televisions</h1>
@@ -33,3 +69,6 @@
 <br>
 
 <%= link_to 'New Television', new_television_path %>
+
+-->
+
