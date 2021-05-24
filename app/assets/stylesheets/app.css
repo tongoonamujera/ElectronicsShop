@@ -1,0 +1,126 @@
+* {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .bg-secondar {
+    background-color: #383838;
+  }
+  
+  footer {
+    background-color: #383838;
+  }
+  
+  .li:hover {
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  .dropbtn {
+    background-color: #888;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #d35266;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  p {
+    font-size: 11px;
+  }
+  
+  .topb {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .topb:hover {
+    background-color: #d35266;
+    color: #ddd;
+  }
+  
+  .cl {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 82, 102, 0.7)), to(rgba(211, 82, 102, 0.7))), url("../images/Mcbook17inch.jpg");
+    background: linear-gradient(to bottom, rgba(211, 82, 102, 0.7), rgba(211, 82, 102, 0.7)), url("../images/Mcbook17inch.jpg");
+    background-size: auto;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropup-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #383838;
+    color: red;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .topb,
+    .tr {
+      font-size: 8px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
+  
