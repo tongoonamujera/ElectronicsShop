@@ -1,3 +1,48 @@
+<div class="row my-3">
+  <% @headphones.each do |headphone| %> 
+  <div class="card col-3 mx-auto">
+    <img src="<%= headphone.image %>">
+    <div class="card-body">
+      <p class="card-text">
+        <%= headphone.brandname %>
+      </p>
+      <p class="card-text">
+        <%= headphone.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= headphone.condition %>
+      </p>
+      <p class="card-text">
+        <%= headphone.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', headphone, class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_headphone_path(headphone), class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', headphone, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <p id="notice"><%= notice %></p>
 
 <h1>Headphones</h1>
@@ -33,3 +78,5 @@
 <br>
 
 <%= link_to 'New Headphone', new_headphone_path %>
+
+-->

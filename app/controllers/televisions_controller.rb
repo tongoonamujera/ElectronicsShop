@@ -64,6 +64,6 @@ class TelevisionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def television_params
-      params.require(:television).permit(:image, :brandname, :description, :condition, :location)
+      params.require(:television).permit(:image, :brandname, :description, :condition, :location, :price)
     end
 end

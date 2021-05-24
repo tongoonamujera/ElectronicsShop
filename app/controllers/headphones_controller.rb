@@ -64,6 +64,6 @@ class HeadphonesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def headphone_params
-      params.require(:headphone).permit(:image, :brandname, :description, :condition, :location)
+      params.require(:headphone).permit(:image, :brandname, :description, :condition, :location, :price)
     end
 end

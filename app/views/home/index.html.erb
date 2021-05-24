@@ -1,0 +1,211 @@
+<div class="row mt-5">
+  <% @televisions.each do |television| %>
+    <div class="card col-3 mx-auto mb-5">
+      <img src="<%= television.image %>">
+      <div class="card-body">
+        <p>
+          <%= television.brandname %>
+        </p>
+        <p>
+          <%= television.description %>
+        </p>
+        <p>
+          <%= television.condition %>
+        </p>
+        <p>
+          <%= television.location %>
+        </p>
+      </div>
+      <div class="card-footer d-flex justify-content-between">
+        <div class="col-3">
+          <%= link_to 'Show', television, class:"btn btn-outline-success py-0 px-1" %>
+        </div>
+        <div class="col-3">
+          <%= link_to 'Edit', edit_television_path(television), class:"btn btn-outline-success py-0 px-1" %>
+        </div>
+        <div class="col-3">
+          <%= link_to 'Delete', television, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger py-0 px-1" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+<div class="row my-5">
+  <% @cellphones.each do |cellphone| %>
+  <div class="card col-3 mx-auto bg-light">
+    <img src="<%= cellphone.image %>" class="w-100 h-50 bg-white">
+    <div class="card-body">
+      <p>
+        <%= cellphone.brandname %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.color %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.memory %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= cellphone.condition %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', cellphone, class:"btn btn-outline-success px-1 py-0" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_cellphone_path(cellphone), class:"btn btn-outline-success px-1 py-0" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', cellphone, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger px-1 py-0" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+<div class="row my-3">
+  <% @laptops.each do |laptop| %> 
+  <div class="card col-3 mx-auto">
+    <img src="<%= laptop.image %>">
+    <div class="card-body">
+      <p class="card-text">
+        <%= laptop.brandname %>
+      </p>
+      <p class="card-text">
+        <%= laptop.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= laptop.condition %>
+      </p>
+      <p class="card-text">
+        <%= laptop.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', laptop, class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_laptop_path(laptop), class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', laptop, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+<div class="row my-3">
+  <% @headphones.each do |headphone| %> 
+  <div class="card col-3 mx-auto">
+    <img src="<%= headphone.image %>">
+    <div class="card-body">
+      <p class="card-text">
+        <%= headphone.brandname %>
+      </p>
+      <p class="card-text">
+        <%= headphone.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= headphone.condition %>
+      </p>
+      <p class="card-text">
+        <%= headphone.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', headphone, class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_headphone_path(headphone), class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', headphone, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row my-3">
+  <% @home_appliances.each do |home_appliance| %> 
+  <div class="card col-3 mx-auto">
+    <img src="<%= home_appliance.image %>">
+    <div class="card-body">
+      <p class="card-text">
+        <%= home_appliance.brandname %>
+      </p>
+      <p class="card-text">
+        <%= home_appliance.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= home_appliance.condition %>
+      </p>
+      <p class="card-text">
+        <%= home_appliance.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', home_appliance, class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_home_appliance_path(home_appliance), class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', home_appliance, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

@@ -1,3 +1,51 @@
+<div class="row my-3">
+  <% @home_appliances.each do |home_appliance| %> 
+  <div class="card col-3 mx-auto">
+    <img src="<%= home_appliance.image %>">
+    <div class="card-body">
+      <p class="card-text">
+        <%= home_appliance.brandname %>
+      </p>
+      <p class="card-text">
+        <%= home_appliance.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= home_appliance.condition %>
+      </p>
+      <p class="card-text">
+        <%= home_appliance.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', home_appliance, class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_home_appliance_path(home_appliance), class:"btn btn-outline-success btn-sm" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', home_appliance, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Home Appliances</h1>
@@ -33,3 +81,4 @@
 <br>
 
 <%= link_to 'New Home Appliance', new_home_appliance_path %>
+-->

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_21_122735) do
+ActiveRecord::Schema.define(version: 2021_05_23_054009) do
 
   create_table "cellphones", force: :cascade do |t|
     t.string "image"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_122735) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
   end
 
   create_table "headphones", force: :cascade do |t|
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_122735) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
   end
 
   create_table "home_appliances", force: :cascade do |t|
@@ -42,6 +44,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_122735) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
   end
 
   create_table "laptops", force: :cascade do |t|
@@ -52,6 +55,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_122735) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
   end
 
   create_table "televisions", force: :cascade do |t|
@@ -62,6 +66,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_122735) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "price"
   end
 
 end

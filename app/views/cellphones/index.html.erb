@@ -1,5 +1,50 @@
-<p id="notice"><%= notice %></p>
+<div class="row my-5">
+  <% @cellphones.each do |cellphone| %>
+  <div class="card col-3 mx-auto bg-light">
+    <img src="<%= cellphone.image %>" class="w-100 h-50 bg-white">
+    <div class="card-body">
+      <p>
+        <%= cellphone.brandname %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.color %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.memory %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.description %>
+      </p>
+      <p class="card-text text-danger">
+        <%= cellphone.condition %>
+      </p>
+      <p class="card-text">
+        <%= cellphone.location.upcase %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <div class="col-3">
+        <%= link_to 'Show', cellphone, class:"btn btn-outline-success px-1 py-0" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Edit', edit_cellphone_path(cellphone), class:"btn btn-outline-success px-1 py-0" %>
+      </div>
+      <div class="col-3">
+        <%= link_to 'Destroy', cellphone, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger px-1 py-0" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
 
+<%= link_to 'New Cellphone', new_cellphone_path, class:"btn btn-outline-secondary px-1 py-0" %>
+
+
+
+
+
+<!--
+<p id="notice"><%= notice %></p>
 <h1>Cellphones</h1>
 
 <table class="table">
@@ -37,3 +82,4 @@
 <br>
 
 <%= link_to 'New Cellphone', new_cellphone_path %>
+-->
