@@ -9,11 +9,14 @@
         <p>
           <%= television.description %>
         </p>
-        <p>
+        <p class="text-danger">
           <%= television.condition %>
         </p>
         <p>
           <%= television.location %>
+        </p>
+        <p class="text-danger">
+          <%= television.price %>
         </p>
       </div>
       <div class="card-footer d-flex justify-content-between">
@@ -61,6 +64,9 @@
       <p class="card-text">
         <%= cellphone.location.upcase %>
       </p>
+      <p class="card-text">
+        <%= cellphone.price %>
+      </p>
     </div>
     <div class="card-footer d-flex justify-content-between">
       <div class="col-3">
@@ -101,6 +107,9 @@
       <p class="card-text">
         <%= laptop.location.upcase %>
       </p>
+      <p class="card-text">
+        <%= laptop.price %>
+      </p>
     </div>
     <div class="card-footer d-flex justify-content-between">
       <div class="col-3">
@@ -139,6 +148,9 @@
       </p>
       <p class="card-text">
         <%= headphone.location.upcase %>
+      </p>
+      <p class="card-text">
+        <%= headphone.price %>
       </p>
     </div>
     <div class="card-footer d-flex justify-content-between">
@@ -193,6 +205,9 @@
       </p>
       <p class="card-text">
         <%= home_appliance.location.upcase %>
+      </p>
+      <p class="card-text">
+        <%= home_appliance.price %>
       </p>
     </div>
     <div class="card-footer d-flex justify-content-between">
