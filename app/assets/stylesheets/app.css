@@ -82,11 +82,12 @@
   }
   
   .cl {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 82, 102, 0.7)), to(rgba(211, 82, 102, 0.7))), url("../images/Mcbook17inch.jpg");
-    background: linear-gradient(to bottom, rgba(211, 82, 102, 0.7), rgba(211, 82, 102, 0.7)), url("../images/Mcbook17inch.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 82, 102, 0.7)), to(rgba(211, 82, 102, 0.7))), url("/public/uploads/laptop/image/1/Mcbook17inch.jpg");
+    background: linear-gradient(to bottom, rgba(211, 82, 102, 0.7), rgba(211, 82, 102, 0.7)), url("/public/uploads/laptop/image/1/Mcbook17inch.jpg");
     background-size: auto;
   }
   
+  /public/uploads/laptop/image/1/Mcbook17inch.jpg
   .dropup {
     position: relative;
     display: inline-block;
