@@ -1,6 +1,12 @@
-<h1>Editing Headphone</h1>
-
-<%= render 'form', headphone: @headphone %>
-
-<%= link_to 'Show', @headphone %> |
-<%= link_to 'Back', headphones_path %>
+<div class="card col-12 col-md-5 mx-auto mb-3">
+  <div class="card-header">
+    <h4 class="text-center">Editing <%= @headphone.brandname %></h4>
+  </div>
+  <div class="card-body">
+    <%= render 'form', headphone: @headphone %>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Show', @headphone, class:"btn btn-success" %> |
+    <%= link_to 'Back', headphones_path, class:"btn btn-secondary py-0 px-5" %>
+  </div>
+</div>

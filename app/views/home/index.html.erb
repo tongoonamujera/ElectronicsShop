@@ -1,6 +1,7 @@
-<div class="row mt-5">
+<div class="row mt-2">
+  <h5>Showing <%= pluralize(@televisions.length, "result")%> of televisions</h5>
   <% @televisions.each do |television| %>
-    <div class="card col-3 mx-auto mb-5">
+    <div class="card col-3 mx-auto mb-2">
       <img src="<%= television.image %>">
       <div class="card-body">
         <p>
