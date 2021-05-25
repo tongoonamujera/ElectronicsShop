@@ -1,5 +1,11 @@
-<h1>New Laptop</h1>
-
-<%= render 'form', laptop: @laptop %>
-
-<%= link_to 'Back', laptops_path %>
+<div class="card col-12 col-md-5 mx-auto mb-3">
+  <div class="card-header">
+    <h4 class="text-center">Create A New Laptop Entry</h4>
+  </div>
+  <div class="card-body">
+    <%= render 'form', laptop: @laptop %>
+  </div>
+  <div class="card-footer d-flex justify-content-center">
+    <%= link_to 'Back', laptops_path, class:"btn btn-secondary py-0 px-5" %>
+  </div>
+</div>

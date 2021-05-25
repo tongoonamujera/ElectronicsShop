@@ -18,30 +18,30 @@
 
   <div class="field">
     <%= form.label :brandname %>
-    <%= form.text_field :brandname %>
+    <%= form.text_field :brandname, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :condition %>
-    <%= form.text_field :condition %>
+    <%= form.text_field :condition, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :location %>
-    <%= form.text_field :location %>
+    <%= form.text_field :location, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class:"form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-center my-2">
+    <%= form.submit class:"btn btn-success py-0" %>
   </div>
 <% end %>

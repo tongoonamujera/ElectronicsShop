@@ -1,5 +1,19 @@
-<h1>New Television</h1>
 
-<%= render 'form', television: @television %>
+<div class="card col-12 col-md-5 mx-auto mb-3">
+  <div class="card-header">
+    <h4 class="text-center"> Create New Television Entry</h4>
+  </div>
+  <div class="card-body">
+    <%= render 'form', television: @television %>
+  </div>
+  <div class="card-footer d-flex justify-content-center">
+    <%= link_to 'Back', televisions_path, class:"btn btn-secondary py-0 px-5" %>
+  </div>
+</div>
 
-<%= link_to 'Back', televisions_path %>
+
+
+
+
+
+
