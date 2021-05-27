@@ -1,29 +1,40 @@
+<div class="card col-4 mx-auto">
+  <div class="card-header">
+    viewing <%= @television.brandname %>
+  </div>
+  <p>
+  <img src="<%= @television.image %>" class="w-100 h-50">
+  </p>
+  <div class="card-body">
+    <p>
+      <strong>Brandname:</strong>
+      <%= @television.brandname %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @television.description %>
+    </p>
+    <p>
+      <strong>Condition:</strong>
+      <%= @television.condition %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @television.location %>
+    </p>
+    <p class="text-danger">
+      <strong>Price:</strong>
+      <%= @television.price %>
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Edit', edit_television_path(@television), class:"btn btn-success py-0" %> |
+    <%= link_to 'Back', televisions_path, class:"btn btn-secondary py-0" %>
+  </div>
+</div>
+
+
+
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <img src="<%= @television.image %>">
-</p>
-
-<p>
-  <strong>Brandname:</strong>
-  <%= @television.brandname %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @television.description %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @television.condition %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @television.location %>
-</p>
-
-<%= link_to 'Edit', edit_television_path(@television) %> |
-<%= link_to 'Back', televisions_path %>

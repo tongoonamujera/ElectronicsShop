@@ -1,39 +1,47 @@
+<div class="card col-4 mx-auto">
+  <div class="card-header">
+    viewing <%= @cellphone.brandname %>
+  </div>
+  <p>
+  <img src="<%= @cellphone.image %>" class="w-100 h-50 mx-auto">
+  </p>
+  <div class="card-body">
+    <p>
+      <strong>Brandname:</strong>
+      <%= @cellphone.brandname %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @cellphone.description %>
+    </p>
+    <p>
+      <strong>Condition:</strong>
+      <%= @cellphone.condition %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @cellphone.location %>
+    </p>
+    <p class="text-danger">
+      <strong>Price:</strong>
+      <%= @cellphone.price %>
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Edit', edit_cellphone_path(@cellphone), class:"btn btn-success py-0" %> |
+    <%= link_to 'Back', cellphones_path, class:"btn btn-secondary py-0" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Image:</strong>
-  <img src="<%= @cellphone.image %>" class="h-25">
-</p>
-
-<p>
-  <strong>Brandname:</strong>
-  <%= @cellphone.brandname %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @cellphone.color %>
-</p>
-
-<p>
-  <strong>Memory:</strong>
-  <%= @cellphone.memory %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @cellphone.description %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @cellphone.condition %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @cellphone.location %>
-</p>
-
-<%= link_to 'Edit', edit_cellphone_path(@cellphone) %> |
-<%= link_to 'Back', cellphones_path %>

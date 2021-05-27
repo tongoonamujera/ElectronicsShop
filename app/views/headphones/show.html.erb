@@ -1,29 +1,44 @@
+<div class="card col-4 mx-auto">
+  <div class="card-header">
+    viewing <%= @headphone.brandname %>
+  </div>
+  <p>
+  <img src="<%= @headphone.image %>" class="w-100 h-50 mx-auto">
+  </p>
+  <div class="card-body">
+    <p>
+      <strong>Brandname:</strong>
+      <%= @headphone.brandname %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @headphone.description %>
+    </p>
+    <p>
+      <strong>Condition:</strong>
+      <%= @headphone.condition %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @headphone.location %>
+    </p>
+    <p class="text-danger">
+      <strong>Price:</strong>
+      <%= @headphone.price %>
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Edit', edit_headphone_path(@headphone), class:"btn btn-success py-0" %> |
+    <%= link_to 'Back', headphones_path, class:"btn btn-secondary py-0" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @headphone.image %>
-</p>
-
-<p>
-  <strong>Brandname:</strong>
-  <%= @headphone.brandname %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @headphone.description %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @headphone.condition %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @headphone.location %>
-</p>
-
-<%= link_to 'Edit', edit_headphone_path(@headphone) %> |
-<%= link_to 'Back', headphones_path %>

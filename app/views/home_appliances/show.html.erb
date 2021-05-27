@@ -1,29 +1,44 @@
+<div class="card col-4 mx-auto">
+  <div class="card-header">
+    viewing <%= @home_appliance.brandname %>
+  </div>
+  <p>
+  <img src="<%= @home_appliance.image %>" class="w-100 h-50 mx-auto">
+  </p>
+  <div class="card-body">
+    <p>
+      <strong>Brandname:</strong>
+      <%= @home_appliance.brandname %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @home_appliance.description %>
+    </p>
+    <p>
+      <strong>Condition:</strong>
+      <%= @home_appliance.condition %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @home_appliance.location %>
+    </p>
+    <p class="text-danger">
+      <strong>Price:</strong>
+      <%= @home_appliance.price %>
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Edit', edit_home_appliance_path(@home_appliance), class:"btn btn-success py-0" %> |
+    <%= link_to 'Back', home_appliances_path, class:"btn btn-secondary py-0" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @home_appliance.image %>
-</p>
-
-<p>
-  <strong>Brandname:</strong>
-  <%= @home_appliance.brandname %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @home_appliance.description %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @home_appliance.condition %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @home_appliance.location %>
-</p>
-
-<%= link_to 'Edit', edit_home_appliance_path(@home_appliance) %> |
-<%= link_to 'Back', home_appliances_path %>

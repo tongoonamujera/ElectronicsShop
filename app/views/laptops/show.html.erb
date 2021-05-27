@@ -1,29 +1,47 @@
+<div class="card col-4 mx-auto">
+  <div class="card-header">
+    viewing <%= @laptop.brandname %>
+  </div>
+  <p>
+  <img src="<%= @laptop.image %>" class="w-100 h-50 mx-auto">
+  </p>
+  <div class="card-body">
+    <p>
+      <strong>Brandname:</strong>
+      <%= @laptop.brandname %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @laptop.description %>
+    </p>
+    <p>
+      <strong>Condition:</strong>
+      <%= @laptop.condition %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @laptop.location %>
+    </p>
+    <p class="text-danger">
+      <strong>Price:</strong>
+      <%= @laptop.price %>
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Edit', edit_laptop_path(@laptop), class:"btn btn-success py-0" %> |
+    <%= link_to 'Back', laptops_path, class:"btn btn-secondary py-0" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @laptop.image %>
-</p>
-
-<p>
-  <strong>Brandname:</strong>
-  <%= @laptop.brandname %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @laptop.description %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @laptop.condition %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @laptop.location %>
-</p>
-
-<%= link_to 'Edit', edit_laptop_path(@laptop) %> |
-<%= link_to 'Back', laptops_path %>
